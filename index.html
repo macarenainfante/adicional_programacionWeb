@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title> Ejercicio adicional 1 </title>
+        <meta charset="utf-8">
+
+
+        <style>
+
+            input:hover{
+                background-color: aqua;
+            }
+
+            select:hover{
+                background-color: beige;
+            }
+
+            checkbox:hover{
+                background-color: coral;
+            }
+
+
+            textarea {
+                overflow: auto;
+                resize: none;
+                background-image: url(imagenes/descarga.jpg);
+                margin-right: 10px;
+                display: inline-flexbox;
+                width : 300px;
+                align-content: center;
+                flex-direction: column;
+                
+
+            }
+            
+            
+            form { 
+                text-align : justify;
+                justify-content: right;
+                border: 2px solid #666699; 
+                padding: 15px;
+                width  : 600px;
+                height : 450px;
+                margin : 0 auto;                
+                box-sizing: border-box;
+                border-radius: 10px;   
+                
+                       
+
+        
+                    
+            } 
+
+            form input {
+                padding: 5px; 
+                text-align : right;
+                justify-content: center;
+                margin-right: 10px;
+                display:inline-block
+
+            }
+
+            form label{
+               width: 240px;
+                font-weight: bold;
+                display: inline-block;
+
+            }
+
+            
+            </style>
+
+    </head>
+
+
+    <body>
+        <h2>Formulario del ejercicio adicional: </h2>
+        <form name="tp" method="post" action="#" enctype="text/plain">
+            <label for="text" >Imput Text:</label>            
+            <input type="text" name="Text" id="text">
+            <br><br>
+
+            <label for="pass">Imput Password:</label>
+            <input type="password" name="Pass" id="pass">
+            <br><br>
+
+            <label for="check">Checkbox:</label>  
+            <input type="checkbox" name="Check" id="check"> I like that
+            <br><br>
+
+            <label for="radio">Radio:</label> 
+            oui <input type="radio" name="radio" value="si" id="radio" checked>
+            non <input type="radio" name="radio" value="no" id="radio" >
+            <br><br>
+
+            <label for="textA">Textarea:</label>
+            <textarea rows="5" cols="55" name="Textarea" wrap="hard" id="textA" ></textarea>
+            <br><br>
+
+            <label for="select">Select (with short options):</label>
+            <select name="short" id="select">
+                <option value="uno"> </option>
+                <option value="dos">Texto </option>
+                <option value="tres">Corto</option>
+            </select>  <br><br>
+
+            <label for="selectL"> Select (with long options):</label>
+            <select name="long" id="selectL">
+                <option value="unoL">Esta es una opcion larga</option>
+                <option value="dosL">Esta tambien es una opcion larga</option>
+                <option selected value="tresL">Big Option test line with more words</option>
+            </select>   
+            <br><br>
+
+            <label for="submit"> Submit button: </label><input type="submit" name="sumbit" id="submit" value="Send">
+
+
+
+
+        </form>
+
+
+    </body>
+
+
+
+
+
+    </html>
